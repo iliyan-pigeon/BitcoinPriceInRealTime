@@ -1,0 +1,7 @@
+1.In the main.py file, I created 2 functions. The "get_coindesk_data" function is getting the data from the API in json
+format and returns it.
+2.The "insert_data_into_database" function is given the json response from the previous function as a parameter.
+If there is not a created database, the function creates it, retrieves the needed currency and price metrics that are
+needed and inserts them into the database table. This function is called after if statement "if __name__=="__main__",
+because that way when you run the unittest it's not created a new database just for the test.
+3. The "TestGetCoindeskData" is testing the functionality with mocked data.
